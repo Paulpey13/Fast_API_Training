@@ -1,0 +1,15 @@
+Launch server :
+
+uvicorn main:app --reload
+
+Add an item :
+
+curl.exe -X POST -H "Content-Type: application/json" 'http://127.0.0.1:8000/items?item=apple'     
+
+Get an item with its id :
+
+curl.exe -X GET http://127.0.0.1:8000/items/0
+
+Get list of items :
+
+curl.exe -X GET 'http://127.0.0.1:8000/items?limit=3'
