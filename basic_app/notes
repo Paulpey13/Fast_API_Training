@@ -4,7 +4,11 @@ uvicorn main:app --reload
 
 Add an item :
 
-curl.exe -X POST -H "Content-Type: application/json" 'http://127.0.0.1:8000/items?item=apple'     
+with type string
+curl.exe -X POST -H "Content-Type: application/json" 'http://127.0.0.1:8000/items?item=apple'    
+
+with type Item we created
+curl.exe -X POST -H "Content-Type: application/json" -d '{\"text\":\"apple\"}' http://127.0.0.1:8000/items
 
 Get an item with its id :
 
@@ -13,3 +17,9 @@ curl.exe -X GET http://127.0.0.1:8000/items/0
 Get list of items :
 
 curl.exe -X GET 'http://127.0.0.1:8000/items?limit=3'
+
+TO have the API's GUI :
+
+http://127.0.0.1:8000/docs#/
+http://127.0.0.1:8000/redoc
+
