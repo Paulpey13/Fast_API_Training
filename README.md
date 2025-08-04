@@ -26,3 +26,9 @@ Endpoints:
 - `GET /result/{job_id}`: Retrieve the result file or error status for a given job
 
 The goal of this project is to simulate realistic batch inference pipelines and demonstrate how to handle background processing, state tracking, and file management using FastAPI.
+
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
